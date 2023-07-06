@@ -1,62 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+  <title>HTML5 - Guia Completo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      margin-top: 0;
+    }
+    
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+    
+    nav {
+      margin-bottom: 20px;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    .tag-section {
+      margin-bottom: 40px;
+    }
+    
+    .back-button {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
-
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+  <h1>Sobre o HTML5</h1>
+  <hr>
+  
+  <nav>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+      <li><a href="#tag-doctype">&lt;!DOCTYPE&gt;</a></li>
+      <li><a href="#tag-html">&lt;html&gt;</a></li>
+      <li><a href="#tag-head">&lt;head&gt;</a></li>
+      <li><a href="#tag-title">&lt;title&gt;</a></li>
+      <li><a href="#tag-font">&lt;font&gt;</a></li>
+      <li><a href="#tag-del">&lt;del&gt;</a></li>
+      <li><a href="#tag-p">&lt;p&gt;</a></li>
+      <li><a href="#tag-abbr">&lt;abbr&gt;</a></li>
     </ul>
-
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+  </nav>
+  
+  <section class="tag-section" id="tag-doctype">
+    <h1>&lt;!DOCTYPE&gt;</h1>
+    <p>A tag &lt;!DOCTYPE&gt; define o tipo de documento HTML. Ela deve ser a primeira linha do código HTML e ajuda os navegadores a interpretarem corretamente o documento.</p>
+    <a href="#top" class="back-button">Voltar para o Índice</a>
+  </section>
+  
+  <section class="tag-section" id="tag-html">
+    <h1>&lt;html&gt;</h1>
+    <p>A tag &lt;html&gt; é o elemento raiz de um documento HTML. Todos os outros elementos devem ser filhos diretos ou indiretos desta tag.</p>
+    <a href="#top" class="back-button">Voltar para o Índice</a>
+  </section>
+  
+  <section class="tag-section" id="tag-head">
+    <h1>&lt;head&gt;</h1>
+    <p>A tag &lt;head&gt; contém informações sobre o documento HTML, como metadados, títulos e links para arquivos CSS e JavaScript.</p>
+    <a href="#top" class="back-button">Voltar para o Índice</a>
+  </section>
+  
+  <section class="tag-section" id="tag-title">
+    <h1>&lt;title&gt;</h1>
+    <p>A tag &lt;title&gt; define o título do documento HTML. Ele é exibido na barra de título do navegador ou na guia do navegador.</p>
+    <a href="#top" class="back-button">Voltar para o Índice</a>
+  </section>
+  
+  <section class="tag-section" id="tag-font">
+    <h1>&lt;font&gt;</h1>
+    <p>A tag &lt;font&gt; é usada para alterar a cor, o tamanho e o estilo da fonte do texto. No entanto, ela não é mais recomendada e seu uso é considerado obsoleto. É preferível usar estilos CSS para estilizar o texto.</p>
+    <a href="#top" class="back-button">Voltar para o Índice</a>
+  </section>
+  
+  <section class="tag-section" id="tag-del">
+    <h1>&lt;del&gt;</h1>
+    <p>A tag &lt;del&gt; é usada para representar texto que foi removido ou excluído. O texto dentro desta tag geralmente é exibido com uma linha horizontal sobre ele.</p>
+    <a href="#top" class="back-button">Voltar para o Índice</a>
+  </section>
+  
+  <section class="tag-section" id="tag-p">
+    <h1>&lt;p&gt;</h1>
+    <p>A tag &lt;p&gt; é usada para definir um parágrafo de texto. Ela é usada para agrupar um bloco de texto em um parágrafo separado.</p>
+    <a href="#top" class="back-button">Voltar para o Índice</a>
+  </section>
+  
+  <section class="tag-section" id="tag-abbr">
+    <h1>&lt;abbr&gt;</h1>
+    <p>A tag &lt;abbr&gt; é usada para representar uma abreviação ou sigla. Ela pode ser usada para fornecer uma descrição completa da abreviação quando o mouse é passado sobre ela.</p>
+    <a href="#top" class="back-button">Voltar para o Índice</a>
+  </section>
+  
+  
+  <hr>
+  
+  <footer>
+    <h3>Referências:</h3>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+      <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML Tutorial</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
     </ul>
-
+  </footer>
 </body>
 </html>
